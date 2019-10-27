@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { cancelRegisterRequest, meetupRegisterRequest } from '../../store/modules/meetup/actions';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import Button from '../Button';
 
 import {
   Container,
@@ -55,7 +56,7 @@ export default function Meetup({ id, data, register }) {
         </Info>
       </Conteudo>
 
-      <SubmitButton onPress={handleAction}>{register ? `Realizar inscrição` : `Cancelar inscrição`}</SubmitButton>
+      <Button onPress={handleAction}>{register ? `Realizar inscrição` : `Cancelar inscrição`}</Button>
     </Container>
   );
 }

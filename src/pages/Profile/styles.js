@@ -6,9 +6,6 @@ import Button from '~/components/Button';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
-  /* justify-content: center;
-  align-items: center;
-  padding: 0 30px; */
 `;
 
 export const Form = styled.ScrollView.attrs({

@@ -110,7 +110,7 @@ export default function Profile() {
           </SubmitButton>
 
           <SubmitButton loading={loading} onPress={handleLogout}>
-            Sair do Meetapp
+            Sair do MeetApp
           </SubmitButton>
         </Form>
       </Container>

@@ -15,8 +15,7 @@ import { listMeetupRequest } from '../../store/modules/meetup/actions';
 
 export default function Dashboard() {
   const [date, setDate] = useState(new Date());
-  const { meetups } = useSelector(state => state.meetup);
-
+  const { meetups, registrations } = useSelector(state => state.meetup);
   const dateFormatted = useMemo(
     () => format(date, `d 'de' MMMM`, { locale: pt }),
     [date]
@@ -32,7 +31,7 @@ export default function Dashboard() {
         dispatch(listMeetupRequest({params}));
       }
       loadMeetups();
-  }, [date])
+  }, [date, registrations])
 
 
 
